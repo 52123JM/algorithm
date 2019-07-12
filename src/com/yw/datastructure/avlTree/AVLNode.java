@@ -1,4 +1,4 @@
-package com.yw.dataStructure.avlTree;
+package com.yw.datastructure.avlTree;
 
 class AvlNode {
     private int value;

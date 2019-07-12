@@ -1,4 +1,4 @@
-package com.yw.dataStructure.binarySortTree;
+package com.yw.datastructure.binarySortTree;
 
 class TreeNode {
     private int data;

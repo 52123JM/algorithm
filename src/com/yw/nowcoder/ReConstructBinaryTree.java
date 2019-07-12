@@ -1,4 +1,4 @@
-package com.yw.nowCoder;
+package com.yw.nowcoder;
 
 //输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。
 //假设输入的前序遍历和中序遍历的结果中都不含重复的数字。
@@ -15,8 +15,10 @@ public class ReConstructBinaryTree {
     // 直到startPre>endPre||startIn>endIn说明子树整理完到。方法每次返回左子树活右子树的根节点
     public TreeNode reConstruct(int[] pre, int startPre, int endPre, int[] in, int startIn, int endIn) {
 
-        if(startPre > endPre || startIn > endIn)
+        if(startPre > endPre || startIn > endIn) {
             return null;
+        }
+
         TreeNode root = new TreeNode(pre[startPre]);
         for (int i = startIn; i <= endIn; i++) {
             if (pre[startPre] == in[i]) {

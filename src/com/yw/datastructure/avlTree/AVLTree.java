@@ -1,4 +1,4 @@
-package com.yw.dataStructure.avlTree;
+package com.yw.datastructure.avlTree;
 
 public class AVLTree {
 

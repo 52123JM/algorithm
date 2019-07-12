@@ -1,4 +1,4 @@
-package com.yw.dataStructure.binarySortTree;
+package com.yw.datastructure.binarySortTree;
 
 public class BinarySortTree {
     public static void main(String[] args) {

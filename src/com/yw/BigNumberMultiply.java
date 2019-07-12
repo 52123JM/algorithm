@@ -37,7 +37,7 @@ public class BigNumberMultiply {
         }
 
         String s = new String(c);
-        if(s.charAt(0) == '0')
+        if('0' == s.charAt(0))
             return s.substring(1);
         else
             return s;

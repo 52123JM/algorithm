@@ -1,4 +1,4 @@
-package com.yw.dataStructure.skipList;
+package com.yw.datastructure.skipList;
 
 class Node {
     int value;
