@@ -1,4 +1,4 @@
-package com.yw.leetcode;
+package com.yw;
 
 import java.util.Stack;
 
