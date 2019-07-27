@@ -3,6 +3,9 @@ package com.yw.datastructure.heap;
 import javax.net.ssl.SSLEngine;
 import java.util.Arrays;
 
+/**
+ * 堆排序
+ */
 public class HeapSort {
     public static void main(String[] args) {
         int[] array = new int[]{2, 3, 6, 5, 8, 7, 1, 0};
@@ -56,8 +59,9 @@ public class HeapSort {
                 childIndex++;
             }
 
-            if (temp >= array[childIndex])
+            if (temp >= array[childIndex]) {
                 break;
+            }
             array[parentIndex] = array[childIndex];
             parentIndex = childIndex;
             childIndex = 2 * childIndex + 1;

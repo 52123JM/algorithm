@@ -1,5 +1,8 @@
 package com.yw.datastructure.heap;
 
+/**
+ * 堆
+ */
 public class Heap {
     public static void main(String[] args) {
         int[] array = new int[]{2, 3, 6, 5, 8, 7, 1, 0};
@@ -62,8 +65,9 @@ public class Heap {
             if (childIndex + 1 < array.length && array[childIndex + 1] < array[childIndex]) {
                 childIndex++;
             }
-            if (array[parentIndex] <= array[childIndex])
+            if (array[parentIndex] <= array[childIndex]) {
                 break;
+            }
             array[parentIndex] = array[childIndex];
             parentIndex = childIndex;
             childIndex = 2 * childIndex + 1;

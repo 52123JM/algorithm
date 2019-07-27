@@ -1,8 +1,10 @@
 package com.yw.datastructure.heap;
 
 import java.util.Arrays;
-import java.util.Queue;
 
+/**
+ * 优先队列
+ */
 public class PriorityQueue {
     int size = 0;
     int capacity = 16;
@@ -85,8 +87,9 @@ public class PriorityQueue {
             if (childIndex + 1 < array.length && array[childIndex + 1] < array[childIndex]) {
                 childIndex++;
             }
-            if (array[parentIndex] <= array[childIndex])
+            if (array[parentIndex] <= array[childIndex]) {
                 break;
+            }
             array[parentIndex] = array[childIndex];
             parentIndex = childIndex;
             childIndex = 2 * childIndex + 1;
